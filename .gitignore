@@ -42,6 +42,9 @@ next-env.d.ts
 
 # === === custom below === === 
 
+# logs
+/logs
+
 # vscode
 .vscode/
 
