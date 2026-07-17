@@ -177,3 +177,30 @@ lorem.adipiscing((sed, elit) => {
   }
 })
 ```
+
+### link
+
+给特定字符串添加链接：
+
+{/* prettier-ignore-start */}
+````markdown handlers="mark"
+<!-- !mark(5) -->
+```js
+function lorem(ipsum, dolor = 1) {
+  const sit = ipsum == null ? 0 : ipsum.sit
+  dolor = sit - amet(dolor)
+  // link[/ipsum/] https://example.com
+  return sit ? consectetur(ipsum) : []
+}
+```
+````
+{/* prettier-ignore-end */}
+
+```js handlers="link"
+function lorem(ipsum, dolor = 1) {
+  const sit = ipsum == null ? 0 : ipsum.sit
+  dolor = sit - amet(dolor)
+  // !link[/ipsum/] https://example.com
+  return sit ? consectetur(ipsum) : []
+}
+```

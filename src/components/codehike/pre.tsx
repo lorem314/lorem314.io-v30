@@ -22,6 +22,7 @@ import { lineNumbers } from "./annotations/line-numbers"
 import { mark } from "./annotations/mark"
 import { callout } from "./annotations/callout"
 import { diff } from "./annotations/diff"
+import { link } from "./annotations/link"
 
 const line: AnnotationHandler = {
   name: "line",
@@ -43,6 +44,7 @@ const handlerMap: { [key: string]: AnnotationHandler[] } = {
   callout: [callout],
   mark: [mark],
   diff: [diff],
+  link: [link],
   // className: [className],
   // fold: [fold],
   // hover: [hover],
